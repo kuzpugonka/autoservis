@@ -1,0 +1,98 @@
+.contact {
+  padding: 104px 0 120px;
+}
+.contact__title {
+  color: var(--dark);
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.contact__title-text_red {
+  color: var(--red);
+}
+.form {
+  background-color: var(--white);
+  padding: 60px;
+}
+.form__fieldset {
+  margin-bottom: 32px;
+}
+.form__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.form__radio-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.form__radio-wrapper:last-child {
+  margin-bottom: 0;
+}
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; /* делает элемент невидимым */
+}
+.radio__label {
+  display: block;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: 1px solid transparent;
+  background-color: var(--light);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.radio__label:hover {
+  background-color: var(--hover);
+}
+.radio__input:focus-visible + .radio__label {
+  border-color: var(--red);
+}
+.radio__input:checked + .radio__label {
+  background-color: var(--dark);
+  color: var(--white);
+}
+.form__subtitle,
+.form__months {
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.form__btn-month_active {
+  color: var(--red);
+}
+.form__btn-month {
+}
+.time {
+}
+.form__input-wrapper {
+  display: grid;grid-template-columns: repeat(2, 1fr);
+}
+.form__input {
+}
+.form__info {
+}
+.form__info-date {
+}
+.form__btn-wrapper {
+}
+.form__btn {
+
+}
+.form__btn:disabled {
+ color: var(--dark);
+ background-color: var();
+ opacity: 0.4;
+}
+.form__btn_next {
+  background-color: var();
+}
