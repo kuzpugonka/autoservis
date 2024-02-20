@@ -1,0 +1,85 @@
+:root {
+  --red: #d10014;
+  --dark: #222222;
+  --light: #f0f4f4;
+  --white: #ffffff;
+  --gray: #d0d0d0;
+  --hover: #e4f0f0;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+&::before,
+&::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.container {
+  --container-width: 1180px;
+  --container-padding: 30px;
+  max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}

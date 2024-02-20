@@ -1,0 +1,74 @@
+.about {
+  background-image: linear-gradient(
+    var(--dark) 0%,
+    var(--dark) 50%,
+    var(--light) 50%,
+    var(--light) 100%
+  );
+  padding: 92px 0;
+}
+.about__bg {
+  position: relative;
+  display: flex;
+  min-height: 56vw;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../img/red_fon_about.svg),
+    linear-gradient(
+      var(--dark) 0%,
+      var(--dark) 50%,
+      var(--light) 50%,
+      var(--light) 100%
+    );
+}
+.about__bg::before,
+.about__bg::after {
+  content: "";
+  position: absolute;
+  background: url(../img/tire.svg) center/contain no-repeat;
+  pointer-events: none; /*  недоступен для клика */
+  height: 25vw;
+  left: 0;
+  right: 0;
+}
+.about__bg::before {
+  top: 0;
+  transform: translateY(-25%);
+}
+.about__bg::after {
+  bottom: 0;
+  transform: translateY(25%);
+}
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.about__title {
+  padding: 14px 60px 14px;
+  min-width: min-content;
+  text-align: right;
+  justify-self: end;
+
+  color: var(--white);
+  text-align: right;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  border-right: 2px solid var(--white);
+}
+.about__text {
+  max-width: 510px;
+  padding: 14px 0 14px 60px;
+  justify-self: start;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+/* .about__title-text {} */
+.about__title-text_black {
+  color: var(--dark);
+}
