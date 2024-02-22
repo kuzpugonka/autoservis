@@ -58,7 +58,7 @@
       <section class="contact" id="contact">
         <div class="container">
           <h3 class="contact__title">
-            Заполните форму и&nbsp;мы&nbsp;
+            Заполните форму и&nbsp;мы
             <span class="contact__title-text contact__title-text_red">
               свяжемся с&nbsp;вами
             </span>
@@ -390,26 +390,29 @@
               <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
               <p class="form__info">
                 <time class="form__info-date" time-datetime="2024-03-02T14:00">
-                  <span>03.02</span>
-                  <span>14:00</span>
+                  <span class="form__info-date_day">03.02</span>
+                  <span class="form__info-date_time">14:00</span>
                 </time>
               </p>
             </fieldset>
 
             <div class="form__btn-wrapper">
-              <button class="form__btn">
+              <button class="form__btn" type="button">
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989593 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM13 6.75H1V5.25H13V6.75Z" fill="currentColor"/>
                   </svg>
                   
                 <span>Назад</span>
               </button>
-              <button class="form__btn form__btn_next">
+              <button class="form__btn form__btn_next" type="button">
                 <span>Далее</span>
                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12.5303 6.53033C12.8232 6.23744 12.8232 5.76256 12.5303 5.46967L7.75736 0.696699C7.46447 0.403806 6.98959 0.403806 6.6967 0.696699C6.40381 0.989593 6.40381 1.46447 6.6967 1.75736L10.9393 6L6.6967 10.2426C6.40381 10.5355 6.40381 11.0104 6.6967 11.3033C6.98959 11.5962 7.46447 11.5962 7.75736 11.3033L12.5303 6.53033ZM0 6.75H12V5.25H0V6.75Z" fill="currentColor"/>
                   </svg>
                   
+              </button>
+              <button class="form__btn form__btn_submit" type="submit">
+                Далее                               
               </button>
             </div>
           </form>
@@ -421,12 +424,19 @@
       <div class="container footer__container">
         <img class="header__logo" src="./img/logotext.svg" alt="logo" />
 
-        <p class="copiright">&copy;&nbsp;AutoService, 2024</p>
+        <p class="footer__copiright">&copy;&nbsp;AutoService, 2024</p>
 
-        <ul class="dev">
-          <li>Дизайнер: Анастасия Илина</li>
-          <li>
-            Разработчик: <a href="https://t.me/kuzpugonka">Софья Илясова</a>
+        <ul class="footer__devs">
+          <li class="footer__dev">Дизайнер: 
+            <a class="footer__dev-link" href="https://t.me/mrshmallowww">
+              Анастасия Илина
+            </a>
+          </li>
+          <li class="footer__dev">
+            Разработчик: 
+            <a class="footer__dev-link" href="https://t.me/kuzpugonka">
+              Софья Илясова
+            </a>
           </li>
         </ul>
       </div>

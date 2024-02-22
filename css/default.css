@@ -10,6 +10,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth; /*  плавность переходов */
 }
 
 *,
@@ -82,4 +83,28 @@ ul {
   max-width: calc(var(--container-width) + var(--container-padding) * 2);
   padding: 0 var(--container-padding);
   margin: 0 auto;
+}
+
+@media (max-width: 1080px) {
+  .container {
+    --container-padding: 66px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    --container-padding: 44px;
+  }
+}
+
+@media (max-width: 660px) {
+  .container {
+    --container-padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    --container-padding: 16px;
+  }
 }

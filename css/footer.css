@@ -1,0 +1,32 @@
+.footer {
+  background-color: var(--dark);
+  padding: 40px 0 30px;
+}
+.footer__container {
+  display: grid;
+  grid-template-areas: 
+  "logo ."
+  "copiright dev";
+  gap: 50px;
+  color: var(--white);
+  line-height: 1.4;
+}
+.header__logo {
+  grid-area: logo;
+  width: 100%;
+  max-width: 480px;
+}
+.footer__copiright {
+  grid-area: copiright;
+  align-self: end;
+}
+.footer__devs {
+  grid-area: dev;
+  justify-self: end;
+}
+.footer__dev:not(:last-child) {
+  margin-bottom: 7px;
+}
+.footer__dev-link:hover {
+  color: var(--hover);
+}

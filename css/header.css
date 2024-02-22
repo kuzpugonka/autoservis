@@ -1,18 +1,50 @@
 .header {
   padding-top: 32px;
-  background-color: var(--dark);  /* потом убрать */
+  background-color: var(--dark);
 }
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-/* .header__logo {} */
+.header__logo {
+  width: 254px;
+}
 .header__link {
-  font-size: 16px;
   font-weight: 500;
   line-height: 1.4;
   padding: 12px 20px;
   background-color: var(--light);
   border-radius: 50px;
+  border: 1px solid transparent;
+  color: inherit;
+  font-size: inherit;
+  outline: none;
+}
+.header__link:hover {
+  background-color: var(--hover);
+}
+.header__link:focus-visible {
+  border-color: var(--red);
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .header__logo {
+    width: 180px;
+  }
 }
