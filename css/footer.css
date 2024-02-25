@@ -4,14 +4,14 @@
 }
 .footer__container {
   display: grid;
-  grid-template-areas: 
-  "logo ."
-  "copiright dev";
+  grid-template-areas:
+    "logo ."
+    "copiright dev";
   gap: 50px;
   color: var(--white);
   line-height: 1.4;
 }
-.header__logo {
+.footer__logo {
   grid-area: logo;
   width: 100%;
   max-width: 480px;
@@ -29,4 +29,31 @@
 }
 .footer__dev-link:hover {
   color: var(--hover);
+}
+
+@media (max-width: 660px) {
+  .footer {
+    padding: 24px 0 20px;
+  }
+  .footer__container {
+    gap: 0;
+    grid-template-areas:
+      "logo"
+      "copiright"
+      "dev";
+  }
+
+  .footer__logo {
+    margin-bottom: 32px;
+    max-width: 230px;
+  }
+  .footer__copiright {
+    margin-bottom: 16px;
+  }
+  .footer__devs {
+    justify-self: start;
+  }
+  .footer__dev:not(:last-child) {
+    margin-bottom: 7px;
+  }
 }
