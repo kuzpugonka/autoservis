@@ -56,6 +56,7 @@
   background-color: var(--light);
   font-weight: 500;
   line-height: 1.4;
+  cursor: pointer;
 }
 .radio__label:hover {
   background-color: var(--hover);
@@ -78,6 +79,10 @@
 .form__btn-month_active {
   color: var(--red);
   transform: scale(1.15);
+}
+
+.form__time {
+  display: none;
 }
 
 .form__input-wrapper {

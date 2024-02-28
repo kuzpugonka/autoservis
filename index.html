@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
 
-    <script src="./js/index.js" defer></script>
+    <script src="./js/index.js" type="module"></script>
   </head>
 
   <body>
@@ -65,13 +65,14 @@
               свяжемся с&nbsp;вами
             </span>
           </h3>
+
           <form class="contact__form form">
             <!-- направление -->
-            <fieldset class="form__fieldset form__fieldset_active">
+            <fieldset class="form__fieldset form__fieldset_type form__fieldset_active">
               <legend class="form__title">Выберите нужное направление</legend>
 
-              <div class="form__radio-wrapper">
-                <div class="radio">
+              <div class="form__radio-wrapper form__radio-wrapper_type">
+                <!-- <div class="radio">
                   <input
                     class="radio__input"
                     name="type"
@@ -186,12 +187,12 @@
                   <label class="radio__label" for="tireFitting">
                     Шиномонтаж и&nbsp;балансировка
                   </label>
-                </div>
+                </div> -->
               </div>
             </fieldset>
 
             <!-- датa и время -->
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset_date">
               <legend class="form__title">Выберите дату и&nbsp;время</legend>
 
               <div class="form__months">
@@ -205,7 +206,7 @@
                 <button class="form__btn-month" type="button">Апрель</button>
               </div>
 
-              <div class="form__radio-wrapper">
+              <div class="form__radio-wrapper form__radio-wrapper_day">
                 <div class="radio">
                   <input
                     class="radio__input"
@@ -310,11 +311,11 @@
               <div class="form__time">
                 <p class="form__subtitle">Доступное время:</p>
 
-                <div class="form__radio-wrapper">
+                <div class="form__radio-wrapper form__radio-wrapper_time">
                   <div class="radio">
                     <input
                       class="radio__input"
-                      name="day"
+                      name="time"
                       type="radio"
                       id="time10"
                     />
@@ -324,7 +325,7 @@
                   <div class="radio">
                     <input
                       class="radio__input"
-                      name="day"
+                      name="time"
                       type="radio"
                       id="time14"
                     />
@@ -334,7 +335,7 @@
                   <div class="radio">
                     <input
                       class="radio__input"
-                      name="day"
+                      name="time"
                       type="radio"
                       id="time15"
                     />
@@ -344,7 +345,7 @@
                   <div class="radio">
                     <input
                       class="radio__input"
-                      name="day"
+                      name="time"
                       type="radio"
                       id="time17"
                     />
@@ -354,7 +355,7 @@
                   <div class="radio">
                     <input
                       class="radio__input"
-                      name="day"
+                      name="time"
                       type="radio"
                       id="time20"
                     />
@@ -364,7 +365,8 @@
               </div>
             </fieldset>
 
-            <fieldset class="form__fieldset">
+            <!-- поля ввода -->
+            <fieldset class="form__fieldset form__fieldset_client">
               <legend class="form__title">Заполните поля</legend>
 
               <div class="form__input-wrapper">
@@ -394,7 +396,7 @@
                 />
               </div>
 
-              <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
+              <p class="form__info form__info_type">Диагностика и&nbsp;ремонт двигателей</p>
               <p class="form__info">
                 <time class="form__info-date" time-datetime="2024-03-02T14:00">
                   <span class="form__info-date_day">03.02</span>
